@@ -217,10 +217,10 @@ def main(urse_path):
     save_to_excel(all_data, output_path, rules)
 
 if __name__ == '__main__':
-    # if len(sys.argv) < 2:
-    #     print("Usage:python script.py <Input path>")
-    #     sys.exit(1)
+    if len(sys.argv) < 2:
+        print("Usage:python script.py <Input path>")
+        sys.exit(1)
     
-    # input_arg = sys.argv[1]
-    input_arg = input('path')
+    input_arg = sys.argv[1]
+
     main(input_arg)
